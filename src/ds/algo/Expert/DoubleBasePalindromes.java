@@ -1,21 +1,16 @@
 package ds.algo.Expert;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PrimitiveIterator.OfDouble;
-
 public class DoubleBasePalindromes {
 
 	public static boolean isPalindrome(int number) {
 
-		int quotient = 0;
+		int remainder = 0;
 		int reverse = 0;
 		int check = number;
 
 		while (check > 0) {
-			quotient = check % 10;
-			reverse = (reverse * 10) + quotient;
+			remainder = check % 10;
+			reverse = (reverse * 10) + remainder;
 			check = check / 10;
 		}
 //		System.out.println("reverse = " + reverse);
@@ -57,7 +52,7 @@ public class DoubleBasePalindromes {
 				String binaryString = getBinary(i);
 //				System.out.println(binaryString);
 				if (isPalindromeForBinary(binaryString)) {
-//					System.out.println(i);
+					System.out.println(i);
 					sum += i;
 				}
 			}

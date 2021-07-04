@@ -51,12 +51,16 @@ public class GridTraveller {
 	}
 
 	public static void main(String[] args) {
-		//remember to reinitialize the Map before every recursive call so that its empty foe next calculation
+		//remember to reinitialize the Map before every recursive call so that its empty for next calculation
 		
 		System.out.println(getMaximumWaysToTravell(1, 1));
+		map.clear();
 		System.out.println(getMaximumWaysToTravell(2, 3));
+		map.clear();
 		System.out.println(getMaximumWaysToTravell(3, 2));
+		map.clear();
 		System.out.println(getMaximumWaysToTravell(3, 3));
+		map.clear();
 		long start1 = System.currentTimeMillis();
 		System.out.println(getMaximumWaysToTravell(18, 18));
 		System.out.println(System.currentTimeMillis() - start1 + " ms");
