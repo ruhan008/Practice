@@ -68,7 +68,6 @@ public class MergeSortAtlernateMethod {
 		mergeSortNew(array, 0, array.length - 1);
 
 		System.out.println("Array after merge sort: " + Arrays.toString(array));
-
 	}
 
 }

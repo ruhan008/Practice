@@ -30,5 +30,7 @@ public class ArrayListPractice {
 		Collections.reverse(list);
 		System.out.println(list);
 
+		System.out.println("Hey There");
+
 	}
 }
